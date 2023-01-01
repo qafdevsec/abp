@@ -130,6 +130,11 @@ public class OpenIddictServerModule : AbpModule
                 options.UseAspNetCore();
             });
         });
+
+        PreConfigure<OpenIddictServerBuilder>(builder =>
+        {
+            builder.AddEventHandler(HttpToHttpsHandler.Descriptor);
+        });
     }
 
     public override void ConfigureServices(ServiceConfigurationContext context)
