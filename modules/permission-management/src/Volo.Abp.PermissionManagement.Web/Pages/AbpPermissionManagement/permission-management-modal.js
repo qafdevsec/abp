@@ -5,6 +5,11 @@ var abp = abp || {};
     abp.modals.PermissionManagement = function () {
         var l = abp.localization.getResource("AbpPermissionManagement");
         
+        var $grantAllPermissions = $('#grantAllPermissions');
+        var $permissionsTabs = $('#PermissionsTabs');
+        
+        $grantAllPermissions.insertBefore($permissionsTabs);
+        
         function checkParents($tab, $checkBox) {
             var parentName = $checkBox
                 .closest('.custom-checkbox')

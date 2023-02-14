@@ -10,3 +10,7 @@
 .custom-scroll-content {
     max-height: 440px;
 }
+
+.tab-content {
+    padding-top: 0 !important;
+}
