@@ -51,4 +51,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <Target Condition="'$(IsDocFxBuild)' == 'true'" Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(OutDir)\$(ProjectName).dll&quot; &quot;C:\Z\&quot;" />
+  </Target>
+
 </Project>
