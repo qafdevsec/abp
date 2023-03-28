@@ -85,6 +85,7 @@ public class MyProjectNameWebModule : AbpModule
         var hostingEnvironment = context.Services.GetHostingEnvironment();
         var configuration = context.Services.GetConfiguration();
 
+        context.Services.AddResponseCaching();
         ConfigureAuthentication(context);
         ConfigureUrls(configuration);
         ConfigureBundles();
@@ -202,6 +203,7 @@ public class MyProjectNameWebModule : AbpModule
             app.UseErrorPage();
         }
 
+        app.UseResponseCaching();
         app.UseCorrelationId();
         app.UseStaticFiles();
         app.UseRouting();
