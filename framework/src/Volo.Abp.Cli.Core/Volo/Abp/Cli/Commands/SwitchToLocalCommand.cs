@@ -11,18 +11,18 @@ using Volo.Abp.DependencyInjection;
 
 namespace Volo.Abp.Cli.Commands;
 
-public class SwitchToLocal : IConsoleCommand, ITransientDependency
+public class SwitchToLocalCommand : IConsoleCommand, ITransientDependency
 {
     private readonly LocalReferenceConverter _localReferenceConverter;
     public const string Name = "switch-to-local";
-    
-    public ILogger<SwitchToLocal> Logger { get; set; }
 
-    public SwitchToLocal(LocalReferenceConverter localReferenceConverter)
+    public ILogger<SwitchToLocalCommand> Logger { get; set; }
+
+    public SwitchToLocalCommand(LocalReferenceConverter localReferenceConverter)
     {
         _localReferenceConverter = localReferenceConverter;
     }
-    
+
     public async Task ExecuteAsync(CommandLineArgs commandLineArgs)
     {
         var workingDirectory = GetWorkingDirectory(commandLineArgs) ?? Directory.GetCurrentDirectory();
