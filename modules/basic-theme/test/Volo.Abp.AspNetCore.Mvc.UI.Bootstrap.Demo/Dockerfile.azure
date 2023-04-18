@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /app
-COPY Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.Demo/*.csproj ./Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.Demo/
+COPY Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.Demo.csproj ./Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.Demo/
 RUN dotnet restore Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.Demo/Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.Demo.csproj
 COPY . ./
 RUN dotnet publish Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.Demo -c Release -o out
