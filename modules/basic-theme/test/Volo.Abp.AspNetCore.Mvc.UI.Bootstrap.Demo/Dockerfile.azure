@@ -3,7 +3,7 @@ WORKDIR /app
 COPY Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.Demo.csproj .
 RUN dotnet restore Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.Demo.csproj
 COPY . .
-COPY ../../../../common.test.props .
+COPY ../../../common.test.props .
 RUN dotnet publish -c Release -o out
 
 FROM mcr.microsoft.com/dotnet/aspnet:7.0-bullseye-slim AS base
