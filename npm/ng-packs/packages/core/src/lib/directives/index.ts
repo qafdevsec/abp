@@ -8,3 +8,4 @@ export * from './replaceable-template.directive';
 export * from './stop-propagation.directive';
 export * from './show-password.directive';
 export * from './caps-lock.directive';
+export * from './deneme.directive';
