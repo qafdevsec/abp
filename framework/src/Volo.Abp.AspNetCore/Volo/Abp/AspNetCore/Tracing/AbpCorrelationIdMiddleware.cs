@@ -32,7 +32,7 @@ public class AbpCorrelationIdMiddleware : IMiddleware, ITransientDependency
     {
         httpContext.Response.OnStarting(() =>
         {
-            if (options.SetResponseHeader &&!httpContext.Response.Headers.ContainsKey(options.HttpHeaderName))
+            if (options.SetResponseHeader && !httpContext.Response.Headers.ContainsKey(options.HttpHeaderName))
             {
                 httpContext.Response.Headers[options.HttpHeaderName] = correlationId;
             }
