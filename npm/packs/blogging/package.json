@@ -5,7 +5,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@abp/aspnetcore.mvc.ui.theme.shared": "~6.0.0",
+    "@abp/aspnetcore.mvc.ui.theme.shared": "~8.2.0",
     "@abp/owl.carousel": "~6.0.0",
     "@abp/prismjs": "~6.0.0",
     "@abp/tui-editor": "~6.0.0"
