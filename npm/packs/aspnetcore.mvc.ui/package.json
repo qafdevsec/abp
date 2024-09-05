@@ -13,9 +13,9 @@
     "ansi-colors": "^4.1.1",
     "extend-object": "^1.0.0",
     "glob": "^7.1.6",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "merge-stream": "^2.0.0",
-    "micromatch": "^4.0.2"
+    "micromatch": "^4.0.6"
   },
   "gitHead": "bb4ea17d5996f01889134c138d00b6c8f858a431"
 }
