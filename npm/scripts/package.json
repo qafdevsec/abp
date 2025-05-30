@@ -10,7 +10,7 @@
     "axios": "^0.24.0",
     "chalk": "^4.1.0",
     "commander": "^8.3.0",
-    "execa": "^5.1.1",
+    "execa": "^9.6.0",
     "fs-extra": "^9.0.1",
     "glob": "^7.1.6",
     "npm-check-updates": "^9.0.1",
