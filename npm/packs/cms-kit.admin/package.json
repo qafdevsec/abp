@@ -5,7 +5,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@abp/codemirror": "~6.0.0",
+    "@abp/codemirror": "~8.3.0",
     "@abp/jstree": "~6.0.0",
     "@abp/slugify": "~6.0.0",
     "@abp/tui-editor": "~6.0.0",
